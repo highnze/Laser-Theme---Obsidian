@@ -30,4 +30,4 @@ I used some parts of the following people:
 
 Auto fade note controls by rsdimitrov found in the [Obsidian Forum](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/10)
 
-The snippet "Focus Mode" is found in the theme [obsidian-traffic-lights)(https://github.com/elliotboyd/obsidian-traffic-lights)
+The snippet "Focus Mode" is found in the theme [obsidian-traffic-lights](https://github.com/elliotboyd/obsidian-traffic-lights)
