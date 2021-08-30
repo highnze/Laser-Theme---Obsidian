@@ -17,7 +17,6 @@ Enable the invisible files (Mac: [CMD] + [SHIFT] + [.])
 *SNIPPETS*
 1.  Pasting the snippets CSS file in the  directory 
 
-`YOUR_VAULT/.obsidian/snippets/checkboxes.css`
 
 `YOUR_VAULT/.obsidian/snippets/Popup Window-Bigger.css`
 
