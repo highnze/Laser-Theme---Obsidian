@@ -1,0 +1,16 @@
+/*
+FOCUS MODE IN EDIT MODE
+feature from traffic-lights-theme
+*/
+
+
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line span,
+.cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line pre > span {
+  opacity: 0.85;
+}
+
+.CodeMirror-activeline > .CodeMirror-line span,
+.CodeMirror-activeline > .CodeMirror-line pre > span {
+  opacity: 100%;
+  color: var(--text-normal);
+}
