@@ -2,7 +2,7 @@
 
 This Theme is using the [Overpass Font](https://overpassfont.org/).
 It is based on the theme [Obsidian-Atom](https://github.com/kognise/obsidian-atom) by [Kognise](https://github.com/kognise)
-Feel free to use and change this theme. 
+.Feel free to use and change this theme. 
 
 ## Usage
 
