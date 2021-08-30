@@ -15,9 +15,14 @@ Enable the invisible files (Mac: [CMD] + [SHIFT] + [.])
 2.  Enabling it in the theme dropdown under `Settings` > `Appearance` > `Themes`
 
 *SNIPPETS*
-1.  Pasting the snippets CSS file in the  directory `YOUR_VAULT/.obsidian/snippets/checkboxes.css`
-	`YOUR_VAULT/.obsidian/snippets/Popup Window-Bigger.css`
-	`YOUR_VAULT/.obsidian/snippets/Focus Mode.css`
+1.  Pasting the snippets CSS file in the  directory 
+
+`YOUR_VAULT/.obsidian/snippets/checkboxes.css`
+
+`YOUR_VAULT/.obsidian/snippets/Popup Window-Bigger.css`
+
+`YOUR_VAULT/.obsidian/snippets/Focus Mode.css`
+
 1.  Enabling it in the snippets under `Settings` > `Appearance` > `Snippets`
 
 ## Further help
