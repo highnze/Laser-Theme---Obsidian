@@ -1,0 +1,400 @@
+/*
+Laser Theme
+Stand: 13.02.2021
+
+/***** Table of Contents ****/
+/* 0. Body
+/* 1. Colors General
+/* 2. Colors LIGHT
+/* 3. Colors DARK
+/* 4. Headings
+/* 5. Code Text
+/* 6. Highlighted Text
+/* 7. Tag Pillows
+/* 8. Quote block
+/* 9. Top Titlebar
+/* 10. Trace indentation lines
+/* 11. Horizontal Rule
+/* 12. Task lists
+/* 13. External & internal Links
+/* 14. Graph View
+/* 15. Extra
+*/
+
+body {
+  font-family: Overpass-Light;
+  font-weight: 400;
+}
+
+p {
+font-family: Overpass-Light;
+font-weight: 400;
+}
+strong {
+font-family: Overpass;
+font-weight: 400;
+}
+
+em {
+font-family: Overpass-LightItalic;
+font-style: italic;
+}
+
+/* ======= 1. Colors General =======*/
+.theme-dark,
+.theme-light {
+
+}
+/* ======= 2. Colors LIGHT =======*/
+.theme-light {
+  --background-primary: #fafafa; /*bg-prime + sec copied from Atom Light Theme*/
+  --background-primary-alt: #eaeaeb;
+  --background-secondary: #eaeaeb;
+  --background-secondary-alt: #dbdbdc;
+
+  --background-modifier-cover: rgba(227, 229, 232, 0.8);
+
+  --text-accent: #1136d1;
+  --text-accent-tag: #1136d1;
+  --text-accent-hover: #FF0088;
+  --text-faint: #666;
+  --accent-strong: #0000ff;
+  --text-normal: #000000;
+
+  --text-selection: rgba(134, 202, 255, 0.65);
+  --accent-2: #1136d1;
+  --interactive-accent: #0000ff;
+  --interactive-accent-checkbox: rgba(0,219,94, 0.9); /* green */
+  --scrollbar-bg: rgba(0, 0, 0, 0);
+
+  --text-graph: rgba(0,0,0,0.8);
+}
+
+
+/* ======= 3. DARK THEME =======*/
+.theme-dark {
+  --background-primary: #272b34; /*bg-prime + sec copied from Atom Light Theme*/
+  --background-primary-alt: #20242b;
+  --background-secondary: #20242b;
+  --background-secondary-alt: #1a1e24;
+
+  --background-modifier-cover: #1a1e24;
+
+  --text-accent: #FFA200;
+  --text-accent-tag: #FF6500;
+  --text-accent-hover: #FF0088;
+  --text-faint: #666;
+  --accent-strong: #FFA200;
+  --text-normal: #ffffff;
+
+  --text-selection: rgba(134, 202, 255, 0.65);
+  --accent-2: #1136d1;
+  --interactive-accent: #FFA200;
+  --interactive-accent-checkbox: rgba(0,219,94, 0.9); /* green */
+  --scrollbar-bg: rgba(0, 0, 0, 0);
+
+  --text-graph: rgba(255,255,255,0.55);
+}
+
+/* ======= 4. Headings =======*/
+.markdown-preview-view h1 {
+  line-height: 40px;
+  padding-bottom: 10px;
+  border-bottom: 2.25px solid var(--text-accent);
+}
+
+.markdown-preview-view h2 {
+  line-height: 36px;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--text-accent);
+}
+
+.markdown-preview-view h3 {
+  line-height: 28px;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  /*border-bottom: 1px solid var(--text-accent);*/
+}
+/*
+.markdown-preview-view h4 {
+  border-bottom: 1px solid var(--text-accent);
+}
+*/
+
+/* ====== 5. Code Text =======*/
+.markdown-preview-view code {
+  color: #ff0088;
+}
+
+/* ====== 6. Highlighted Text =======*/
+mark {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: rgb(240, 255, 82, 0.75 );
+}
+/* ====== 7. Tag Pillows =======*/
+
+.tag {
+  background-color: #1136d1;
+  border: none;
+  color: white !important;
+  font-size: 11px;
+  line-height: 1.6em;
+  padding: 0px 7px 0px 7px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0px 1px 2.5px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.tag[href^="#obsidian"] {
+  background-color: #4d3ca6;
+}
+
+.tag[href^="#wichtig"] {
+  background-color: #f90b33;
+}
+
+.tag[href^="#toRead"] {
+  background-color: #f90b33;
+}
+.tag[href^="#status/toRead"] {
+  background-color: #f90b33;
+}
+.tag[href^="#read"] {
+  background-color: #00db5e;
+}
+.tag[href^="#status/read"] {
+  background-color: #00db5e;
+}
+.tag[href^="#reading"] {
+  background-color: #ff6500;
+}
+.tag[href^="#status/reading"] {
+  background-color: #ff6500;
+}
+.tag[href^="#toDo"] {
+  background-color: #f90b33;
+}
+.tag[href^="#status/toDo"] {
+  background-color: #f90b33;
+}
+.tag[href^="#doing"] {
+  background-color: #ff6500;
+}
+.tag[href^="#status/doing"] {
+  background-color: #ff6500;
+}
+.tag[href^="#done"] {
+  background-color: #00db5e;
+}
+.tag[href^="#status/done"] {
+  background-color: #00db5e;
+}
+.tag[href^="#toReview"] {
+  background-color: #f90b33;
+}
+.tag[href^="#status/toReview"] {
+  background-color: #f90b33;
+}
+.tag[href^="#toZettel"] {
+  background-color: #f90b33;
+}
+.tag[href^="#status/toZettel"] {
+  background-color: #f90b33;
+}
+.tag:hover {
+  color: white;
+  box-shadow: 0 0 0.6em rgba(255, 0, 136, 0.75);
+  background-color: var(--text-accent-hover);
+}
+
+/* ======= 8. Quote block =======*/
+.markdown-preview-view blockquote {
+  border-radius: 3px;
+  border: 0px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+  border-left: 3px solid var(--accent-strong);
+  padding: 14px 10px 10px 10px;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.markdown-preview-view blockquote.rq {
+  border-left: 5px solid var(--text-accent);
+  border-radius: 0;
+  border: 0px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+  border-left: 5px solid var(--text-accent);
+  padding: 14px 22px 14px 22px;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 80px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ======= 9. Top Titlebar =======*/
+.titlebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 23px;
+  display: flex;
+  background-color: var(--background-modifier-cover);
+}
+
+.titlebar-text {
+  color: var(--text-accent);
+}
+
+
+/* ======= 10. Trace indentation lines =======*/
+/* By death_au */
+.cm-hmd-list-indent .cm-tab,
+ul ul {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before {
+  content: "";
+  border-left: 2px solid var(--background-modifier-border);  /*rgba(20,122,255,0.3);*/
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+  left: 0;
+  top: -5px;
+  bottom: -4px;
+}
+
+ul ul::before {
+  left: -15px;
+  top: 0;
+  bottom: 0;
+}
+
+/* ======= 11. Horizontal Rule =======*/
+/* https://github.com/TriDiamond/Obsidian-Obsidianite */
+/* found in the theme »Bryans Gruvbox« */
+.markdown-preview-view hr {
+  border: none;
+  height: 1.25px;
+  background-color: var(--interactive-accent);
+}
+
+.markdown-preview-view hr::after {
+  content: '\026A1'; /* Blitz: \026A1 , Feuer: \01F525, Rakete: \01F680 */
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  background-color: var(--background-primary);
+}
+
+
+/* ======= 12. Task lists =======*/
+/* -> Snippet Checkbox */
+/* ======= 13. External & Internal Links =======*/
+
+a.internal-link{
+  color: var(--text-accent);
+}
+a.internal-link:hover{
+  color: #FF0088;
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+    opacity: 0.6;
+    color: grey;
+}
+
+a.internal-link.is-unresolved:hover{
+  color: ##FF0088;
+}
+
+/* make external links italics to differentiate */
+a:not(.internal-link) {
+  text-decoration-color: #ff6500;
+  font-family: Overpass-LightItalic;
+  font-style: italic;
+}
+
+.external-link {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent, transparent), url(/public/images/874d8b8e340f75575caacd8d766a9659.svg);
+  background-size: 13px;
+  padding-right: 16px;
+  background-position-y: 4px;
+}
+/*
+.external-link:after {
+content: ' \01F680';
+}
+*/
+
+/* ======= 14. Graph View =======*/
+.graph-view.color-fill {
+    color: #1136d1;
+}
+
+.graph-view.color-fill-unresolved {
+    color: grey;
+}
+
+.graph-view.color-line, .graph-view.color-arrow {
+    color:  rgba(255,101,0,0.35);
+}
+
+.graph-view.color-text {
+    color: var(--text-graph);
+}
+
+.graph-view.color-fill-highlight {
+    color: #0000ff;
+}
+.graph-view.color-line-highlight {
+    color: #ff6500;
+}
+
+.graph-view.color-fill-tag {
+  color: #FF9A7C !important;
+}
+
+.graph-view.color-fill-attachment {
+  color: #02C8F5 !important;
+}
+
+.graph-controls-button:hover {
+  color: #ff6500;
+}
+
+/* ======= 15. EXTRA =======*/
+/* by https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/10 */
+.view-header:not(:hover) .view-actions {
+  opacity: 0.5;
+  transition: opacity .25s ease-in-out;
+}
+
+/* auto fades status bar items */
+.status-bar:not(:hover) .status-bar-item {
+  opacity: 0.75;
+  transition: opacity .25s ease-in-out;
+}
